@@ -3,9 +3,11 @@ import { View, Text, TouchableOpacity,StyleSheet } from "react-native";
 
 export const RestaurantItem = ({item}) => {
     return(
-        <View style={styles.container}>
-            <Text style={styles.text}>{item.name}</Text>
-        </View>
+        <TouchableOpacity>
+            <View style={styles.container}>
+                <Text style={styles.text}>{item.name}</Text>
+            </View>
+        </TouchableOpacity>
     )
 }
 
